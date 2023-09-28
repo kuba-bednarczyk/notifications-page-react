@@ -30,6 +30,12 @@ export const StyledHeader = styled.header`
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: ${({theme: {colors}}) => colors.neutral.grayishBlue}
+    color: ${({theme: {colors}}) => colors.neutral.grayishBlue};
+    transition: .2s ease-in-out;
+  }
+
+  > button:hover {
+    color: ${({theme: {colors}}) => colors.primary.blue};
+    transition: .2s ease-in-out;
   }
 `;
