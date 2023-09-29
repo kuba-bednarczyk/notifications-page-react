@@ -11,12 +11,12 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    /* width: 100vw; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
     background-color: ${({ theme: { colors } }) => colors.backgroundColor};
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Plus Jakarta Sans', sans-serif; */

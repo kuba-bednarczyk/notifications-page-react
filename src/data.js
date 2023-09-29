@@ -84,4 +84,6 @@ const data = [
         picture: '',
         isRead: false,
     },
-]
+];
+
+export default data;

@@ -20,7 +20,7 @@ const theme = {
   },
   fontWeight: {
     medium: 500,
-    bold: 800,
+    bold: 700,
   }
 };
 

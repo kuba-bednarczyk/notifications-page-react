@@ -15,10 +15,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-
         <Container>
           <Header />
-          <Notification />
+          <Notification unseen={true}/>
+          <Notification unseen={false} />
         </Container>
       </>
     </ThemeProvider>
