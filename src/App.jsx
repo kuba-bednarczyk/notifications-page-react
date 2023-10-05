@@ -10,6 +10,9 @@ import { Container } from './components/Container.style';
 import Header from './components/Header/Header';
 import Notification from './components/Notification/Notification';
 
+// data
+import data from './data';
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -17,6 +20,7 @@ function App() {
         <GlobalStyles />
         <Container>
           <Header />
+          {data.map()}
           <Notification unseen={true}/>
           <Notification unseen={false} />
         </Container>
