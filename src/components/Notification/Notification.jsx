@@ -9,34 +9,33 @@ import {
   Dot,
 } from './Notification.style';
 
-
-const Notification = ({ unseen }) => {
+const Notification = ({ data }) => {
   return (
-    <StyledNotification unseen={unseen}>
+    <StyledNotification isRead={true}>
       <ImgBox>
-        <img src='./src/assets/images/avatar-mark-webber.webp' alt='profile_picture' />
+        <img
+          src={data.imgSrc}
+          alt="profile_picture"
+        />
       </ImgBox>
       <InfoBox>
         <h3>
-          <strong>Mark Webber </strong>
-          reacted to your recent post
-          <PostSpan> My first tournament today!</PostSpan>
-          {/* <GroupSpan> My first tournament today!</GroupSpan> */}
-          {unseen && <Dot />}
+          <strong>{data.name} </strong>
+          {data.info} 
+          {data.post && (<PostSpan> {data.post}</PostSpan>)}
+          {data.group && (<GroupSpan> {data.group}</GroupSpan>)}
+          {!data.isRead && (<Dot />)}
         </h3>
-        <p>1m ago</p>
-        {/* <Message>Hello, thanks for setting up the Chess Club. Ive been a member for a few weeks now and Im already having lots of fun and improving my game.</Message> */}
+        <p>{data.time}</p>
+        {data.message && (<Message>{data.message}</Message>)}
       </InfoBox>
-      {/* <img src='./src/assets/images/image-chess.webp' alt='' /> */}
+      {data.picture && (<img src={data.picture} alt='picture' />)}
     </StyledNotification>
   );
 };
 
-
 Notification.propTypes = {
   unseen: PropTypes.bool,
-}
-
+};
 
 export default Notification;
-

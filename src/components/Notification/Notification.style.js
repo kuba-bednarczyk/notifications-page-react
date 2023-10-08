@@ -5,7 +5,7 @@ export const StyledNotification = styled.div`
   display: flex;
   margin-bottom: 10px;
   background-color: ${(props) => 
-    props.unseen ? 
+    props.isRead ? 
     ({theme: {colors}}) => colors.neutral.veryLightGrayishBlue 
     : '#fff'
   };

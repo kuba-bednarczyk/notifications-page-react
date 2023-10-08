@@ -8,10 +8,7 @@ import { Container } from './components/Container.style';
 
 // components
 import Header from './components/Header/Header';
-import Notification from './components/Notification/Notification';
-
-// data
-import data from './data';
+import NotificationsContainer from './components/NotificationsContainer';
 
 function App() {
   return (
@@ -20,9 +17,7 @@ function App() {
         <GlobalStyles />
         <Container>
           <Header />
-          {data.map()}
-          <Notification unseen={true}/>
-          <Notification unseen={false} />
+          <NotificationsContainer />
         </Container>
       </>
     </ThemeProvider>

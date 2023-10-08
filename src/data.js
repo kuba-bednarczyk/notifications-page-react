@@ -6,9 +6,6 @@ const data = [
         info: 'reacted to your recent post',
         time: '1m ago',
         post: 'My first tournament today!',
-        group: '',
-        message: '',
-        picture: '',
         isRead: false,
     },
     {
@@ -17,11 +14,7 @@ const data = [
         name: 'Angela Gray',
         info: 'followed you',
         time: '5m ago',
-        post: '',
-        group: '',
-        message: '',
-        picture: '',
-        isReaded: false,
+        isRead: false,
     },
     {
         id: 3,
@@ -29,10 +22,7 @@ const data = [
         name: 'Jacob Thompson',
         info: 'has joined your group',
         time: '1 day ago',
-        post: '',
         group: 'Chess Club',
-        message: '',
-        picture: '',
         isRead: false,
     },
     {
@@ -41,11 +31,8 @@ const data = [
         name: '',
         info: 'sent you a private message',
         time: '5 days ago',
-        post: '',
-        group: '',
         message: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
         I'm already having lots of fun and improving my game.`,
-        picture: '',
         isRead: true,
     },
     {
@@ -54,9 +41,6 @@ const data = [
         name: 'Kimberly Smith',
         info: 'commented on your picture',
         time: '1 week ago',
-        post: '',
-        group: '',
-        message: '',
         picture: './src/assets/images/image-chess.webp',
         isRead: true,
     },
@@ -67,9 +51,6 @@ const data = [
         info: 'reacted to your recent post',
         time: '2 weeks ago',
         post: '5 end-game strategies to increase your win rate',
-        group: '',
-        message: '',
-        picture: '',
         isRead: true,
     },
     {
@@ -78,11 +59,8 @@ const data = [
         name: 'Anna Kim',
         info: 'left the group',
         time: '2 weeks ago',
-        post: '',
         group: 'Chess Club',
-        message: '',
-        picture: '',
-        isRead: false,
+        isRead: true,
     },
 ];
 
