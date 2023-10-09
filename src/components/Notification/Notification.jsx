@@ -9,9 +9,14 @@ import {
   Dot,
 } from './Notification.style';
 
+
+
 const Notification = ({ data }) => {
+
+  // data.isRead = true;
+
   return (
-    <StyledNotification isRead={true}>
+    <StyledNotification isRead={data.isRead}>
       <ImgBox>
         <img
           src={data.imgSrc}
@@ -24,7 +29,7 @@ const Notification = ({ data }) => {
           {data.info} 
           {data.post && (<PostSpan> {data.post}</PostSpan>)}
           {data.group && (<GroupSpan> {data.group}</GroupSpan>)}
-          {!data.isRead && (<Dot />)}
+          {data.isRead === false && (<Dot />)}
         </h3>
         <p>{data.time}</p>
         {data.message && (<Message>{data.message}</Message>)}
@@ -36,6 +41,7 @@ const Notification = ({ data }) => {
 
 Notification.propTypes = {
   unseen: PropTypes.bool,
+  data: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Notification;

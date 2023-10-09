@@ -1,6 +1,9 @@
 import { StyledHeader } from "./Header.style"
 
 const Header = () => {
+
+
+
   return (
     <StyledHeader>
       <div>

@@ -4,28 +4,26 @@ export const StyledNotification = styled.div`
   padding: 10px 20px;
   display: flex;
   margin-bottom: 10px;
-  background-color: ${(props) => 
-    props.isRead ? 
-    ({theme: {colors}}) => colors.neutral.veryLightGrayishBlue 
-    : '#fff'
-  };
+  background-color: ${(props) =>
+    props.isRead
+      ? '#fff'
+      : ({ theme: { colors } }) => colors.neutral.veryLightGrayishBlue};
   border-radius: 8px;
 
   img {
     display: block;
     height: 45px;
-    width: 45px
+    width: 45px;
   }
-  
+
   img:hover {
     cursor: pointer;
-    outline: 2px solid ${({theme: {colors}}) => colors.neutral.lightGrayishBlue1};
-    border-radius: 7px; 
+    outline: 2px solid ${({ theme: { colors } }) => colors.neutral.lightGrayishBlue1};
+    border-radius: 7px;
   }
 `;
 
 export const ImgBox = styled.div`
-  /* background-color: red; */
   height: 45px;
 
   > img {
@@ -57,7 +55,7 @@ export const InfoBox = styled.div`
   }
 
   > p {
-    color: ${({theme: {colors}}) => colors.neutral.grayishBlue}
+    color: ${({ theme: { colors } }) => colors.neutral.grayishBlue};
   }
 `;
 
@@ -65,40 +63,40 @@ export const PostSpan = styled.span`
   color: ${({ theme: { colors } }) => colors.neutral.darkGrayishBlue};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   &:hover {
-      color: ${({ theme: { colors } }) => colors.primary.blue};
-      cursor: pointer;
-    }
+    color: ${({ theme: { colors } }) => colors.primary.blue};
+    cursor: pointer;
+  }
 `;
 
 export const GroupSpan = styled.span`
   color: ${({ theme: { colors } }) => colors.primary.blue};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   &:hover {
-      cursor: pointer;
-    }
+    cursor: pointer;
+  }
 `;
 
 export const Message = styled.p`
   align-self: flex-end;
-  border: 1px solid ${({theme: {colors}}) => colors.neutral.lightGrayishBlue2};
-  color: ${({theme: {colors}}) => colors.neutral.darkGrayishBlue} !important;
+  border: 1px solid ${({ theme: { colors } }) => colors.neutral.lightGrayishBlue2};
+  color: ${({ theme: { colors } }) => colors.neutral.darkGrayishBlue} !important;
   padding: 10px;
   margin: 10px 0;
   max-width: 550px;
   border-radius: 5px;
 
   &:hover {
-    background-color: ${({theme: {colors}}) => colors.neutral.lightGrayishBlue1};
+    background-color: ${({ theme: { colors } }) => colors.neutral.lightGrayishBlue1};
     cursor: pointer;
   }
 `;
 
 export const Dot = styled.div`
-    display: inline-block;
-    border-radius: 50%;
-    background-color: ${({theme: {colors}}) => colors.primary.red};
-    width: 8px;
-    height: 8px;
-    margin-left: 5px;
-    margin-bottom: 1px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: ${({ theme: { colors } }) => colors.primary.red};
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  margin-bottom: 1px;
 `;

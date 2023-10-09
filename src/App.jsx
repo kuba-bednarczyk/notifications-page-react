@@ -11,6 +11,8 @@ import Header from './components/Header/Header';
 import NotificationsContainer from './components/NotificationsContainer';
 
 function App() {
+
+
   return (
     <ThemeProvider theme={theme}>
       <>
