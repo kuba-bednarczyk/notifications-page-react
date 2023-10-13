@@ -1,4 +1,5 @@
-import img1 from './assets/images/avatar-mark-webber.webp';
+import img1 from '/src/assets/images/avatar-mark-webber.webp';
+import img2 from '/src/assets/images/avatar-angela-gray.webp';
 
 const data = [
     {
@@ -12,7 +13,7 @@ const data = [
     },
     {
         id: 2,
-        imgSrc: './src/assets/images/avatar-angela-gray.webp',
+        imgSrc: img2,
         name: 'Angela Gray',
         info: 'followed you',
         time: '5m ago',
