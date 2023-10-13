@@ -1,12 +1,12 @@
 import img1 from '/src/assets/images/avatar-mark-webber.webp';
 import img2 from '/src/assets/images/avatar-angela-gray.webp';
-import img3 from './src/assets/images/avatar-jacob-thompson.webp';
-import img4 from './src/assets/images/avatar-rizky-hasanuddin.webp';
-import img5 from './src/assets/images/avatar-kimberly-smith.webp';
-import img6 from './src/assets/images/avatar-nathan-peterson.webp';
-import img7 from './src/assets/images/avatar-anna-kim.webp';
+import img3 from '/src/assets/images/avatar-jacob-thompson.webp';
+import img4 from '/src/assets/images/avatar-rizky-hasanuddin.webp';
+import img5 from '/src/assets/images/avatar-kimberly-smith.webp';
+import img6 from '/src/assets/images/avatar-nathan-peterson.webp';
+import img7 from '/src/assets/images/avatar-anna-kim.webp';
 
-import chessImage from './src/assets/images/image-chess.webp';
+import chessImage from '/src/assets/images/image-chess.webp';
 
 const data = [
     {
