@@ -1,7 +1,9 @@
+import img1 from './assets/images/avatar-mark-webber.webp';
+
 const data = [
     {
         id: 1,
-        imgSrc: './src/assets/images/avatar-mark-webber.webp',
+        imgSrc: img1,
         name: 'Mark Webber',
         info: 'reacted to your recent post',
         time: '1m ago',
