@@ -1,5 +1,12 @@
 import img1 from '/src/assets/images/avatar-mark-webber.webp';
 import img2 from '/src/assets/images/avatar-angela-gray.webp';
+import img3 from './src/assets/images/avatar-jacob-thompson.webp';
+import img4 from './src/assets/images/avatar-rizky-hasanuddin.webp';
+import img5 from './src/assets/images/avatar-kimberly-smith.webp';
+import img6 from './src/assets/images/avatar-nathan-peterson.webp';
+import img7 from './src/assets/images/avatar-anna-kim.webp';
+
+import chessImage from './src/assets/images/image-chess.webp';
 
 const data = [
     {
@@ -21,7 +28,7 @@ const data = [
     },
     {
         id: 3,
-        imgSrc: './src/assets/images/avatar-jacob-thompson.webp',
+        imgSrc: img3,
         name: 'Jacob Thompson',
         info: 'has joined your group',
         time: '1 day ago',
@@ -30,7 +37,7 @@ const data = [
     },
     {
         id: 4,
-        imgSrc: './src/assets/images/avatar-rizky-hasanuddin.webp',
+        imgSrc: img4,
         name: 'Rizky Hasanuddin',
         info: 'sent you a private message',
         time: '5 days ago',
@@ -40,16 +47,16 @@ const data = [
     },
     {
         id: 5,
-        imgSrc: './src/assets/images/avatar-kimberly-smith.webp',
+        imgSrc: img5,
         name: 'Kimberly Smith',
         info: 'commented on your picture',
         time: '1 week ago',
-        picture: './src/assets/images/image-chess.webp',
+        picture: chessImage,
         isRead: true,
     },
     {
         id: 6,
-        imgSrc: './src/assets/images/avatar-nathan-peterson.webp',
+        imgSrc: img6,
         name: 'Nathan Peterson',
         info: 'reacted to your recent post',
         time: '2 weeks ago',
@@ -58,7 +65,7 @@ const data = [
     },
     {
         id: 7,
-        imgSrc: './src/assets/images/avatar-anna-kim.webp',
+        imgSrc: img7,
         name: 'Anna Kim',
         info: 'left the group',
         time: '2 weeks ago',
