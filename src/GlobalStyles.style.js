@@ -22,6 +22,13 @@ const GlobalStyles = createGlobalStyle`
     /* font-family: 'Plus Jakarta Sans', sans-serif; */
     font-size: 16px;
   }
+
+  @media (max-height: 728px) {
+    body {
+      height: 100%;
+    }
+  }
+
 `;
 
 export default GlobalStyles;
