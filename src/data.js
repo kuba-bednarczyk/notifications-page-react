@@ -28,7 +28,7 @@ const data = [
     {
         id: 4,
         imgSrc: './src/assets/images/avatar-rizky-hasanuddin.webp',
-        name: '',
+        name: 'Rizky Hasanuddin',
         info: 'sent you a private message',
         time: '5 days ago',
         message: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 

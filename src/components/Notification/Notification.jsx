@@ -9,38 +9,29 @@ import {
   Dot,
 } from './Notification.style';
 
-
-
 const Notification = ({ data }) => {
-
-  // data.isRead = true;
-
   return (
     <StyledNotification isRead={data.isRead}>
       <ImgBox>
-        <img
-          src={data.imgSrc}
-          alt="profile_picture"
-        />
+        <img src={data.imgSrc} alt='profile_picture' />
       </ImgBox>
       <InfoBox>
         <h3>
           <strong>{data.name} </strong>
-          {data.info} 
-          {data.post && (<PostSpan> {data.post}</PostSpan>)}
-          {data.group && (<GroupSpan> {data.group}</GroupSpan>)}
-          {data.isRead === false && (<Dot />)}
+          {data.info}
+          {data.post && <PostSpan> {data.post}</PostSpan>}
+          {data.group && <GroupSpan> {data.group}</GroupSpan>}
+          {data.isRead === false && <Dot />}
         </h3>
         <p>{data.time}</p>
-        {data.message && (<Message>{data.message}</Message>)}
+        {data.message && <Message>{data.message}</Message>}
       </InfoBox>
-      {data.picture && (<img src={data.picture} alt='picture' />)}
+      {data.picture && <img src={data.picture} alt='picture' />}
     </StyledNotification>
   );
 };
 
 Notification.propTypes = {
-  unseen: PropTypes.bool,
   data: PropTypes.arrayOf(PropTypes.object),
 };
 
